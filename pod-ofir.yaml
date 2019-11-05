@@ -1,0 +1,10 @@
+apiVersion: v1 # K8S API Version
+kind: Pod  # Object Type
+metadata:
+ name: yanivomc/spring-music
+spec:
+ containers: # NOTE THAT BELOW HERE WE CAN ADD AS MANY CONTAINERS WE WISH TO ENCAPSULATE IN THE SAME POD
+ - name: ofir
+   image: spring-music:latest
+   ports:
+   - containerPort: 80
